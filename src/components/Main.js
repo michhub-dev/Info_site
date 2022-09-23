@@ -10,7 +10,7 @@ export default function Main(){
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
                      nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                  </p>
-                 <h2 className="text-xl font-bold pt-1 text-indigo-700 border-b border-indigo-600 ">
+                 <h2 className="text-xl mt-8 font-bold pt-1 text-indigo-700 border-b border-indigo-600 ">
                      Advantages 
                  </h2>
                  
@@ -54,13 +54,17 @@ export default function Main(){
              </div>
              <div className="bg-gray-800 py-12 w-full mt-12 flex flex-col items-center border-t-2 border-black">
                  <h2 className="text-xl font-bold text-gray-400">Send us email</h2>
-                 <form className="w-full text-gray-200 max-w-xl mt-4 px-8 md:px-0 md:-mx-2" action="#" method="post">
-                     <div className="flex flex-col md:flex-row">
+                 
+                 <form className="w-full text-gray-200 max-w-xl mt-4 px-8 md:px-0 " action="#" method="post">
+                     <div className="flex flex-col md:flex-row md:-mx-2">
                          <label for="name" className="sr-only">Name</label>
-                         <input id="name" type="text" placeholder="Enter your name" className="mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                         <input id="name" type="text" placeholder="Enter your name" className="focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
                           <label for="email" className="sr-only">Name</label>
-                         <input id="email" type="email" placeholder="Enter your email" className="mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
-                          <textarea placeholder="Type your message" className="mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                         <input id="email" type="email" placeholder="Enter your email" className=" focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                          <textarea placeholder="Type your message" className="focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                     </div>
+                     <div className="flex flex-col md:flex-row md:-mx-2">
+                         <button className="bg-blue-600 py-4 px-2 my-2 focus:outline-none hover:bg-blue-400 rounded-xl w-full text-sm md:mx-2">Send message</button>
                      </div>
                      
                  </form>
