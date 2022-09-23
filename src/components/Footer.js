@@ -4,8 +4,8 @@ export default function Footer(){
     return (
         <>
         <div>
-            <footer>
-                Copyright @ 2022 michy 
+            <footer className="w-full bg-gray-800 pb-8 text-center">
+                <p className="text-xs font-light text-gray-600">Copyright @ 2022 michy </p>
             </footer>
         </div>
         </>
