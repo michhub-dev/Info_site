@@ -52,9 +52,16 @@ export default function Main(){
                  </div>
                  
              </div>
-             <div className="bg-blue-850 py-12 w-full mt-12 flex flex-col items-center border-t-2 border-black">
+             <div className="bg-gray-800 py-12 w-full mt-12 flex flex-col items-center border-t-2 border-black">
                  <h2 className="text-xl font-bold text-gray-400">Send us email</h2>
-                 <form>
+                 <form className="w-full text-gray-200 max-w-xl mt-4 px-8 md:px-0 md:-mx-2" action="#" method="post">
+                     <div className="flex flex-col md:flex-row">
+                         <label for="name" className="sr-only">Name</label>
+                         <input id="name" type="text" placeholder="Enter your name" className="mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                          <label for="email" className="sr-only">Name</label>
+                         <input id="email" type="email" placeholder="Enter your email" className="mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                          <textarea placeholder="Type your message" className="mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
+                     </div>
                      
                  </form>
              </div>
