@@ -35,7 +35,7 @@ export default function Main(){
                          <div className="bg-white sm:p-3 md:p-8 h-full sm:mx-2 flex flex-col items-center rounded-lg p-8 border-b-4 border-gray-500">
                              <div className="w-16 p-2 rounded-full bg-gray-200 text-indigo-700">
                                  <svg className="h-12 w-12 fill-current" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#494c4e" d="M13 0a5 5 0 0 0-5 5 4.88 4.88 0 0 0 .35 1.829c-.01.01-.03.02-.04.03L4.3 10.881 2.707 9.293a1 1 0 0 0-1.414 1.414L2.882 12.3l-.585.587-.59-.589a1 1 0 1 0-1.414 1.41l.591.59-.29.291a1.974 1.974 0 0 0 0 2.819 1.975 1.975 0 0 0 2.82 0l7.727-7.718c.01-.01.02-.03.03-.04A4.881 4.881 0 0 0 13 10a5 5 0 0 0 0-10zm0 7a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/>
+                                        <path  d="M13 0a5 5 0 0 0-5 5 4.88 4.88 0 0 0 .35 1.829c-.01.01-.03.02-.04.03L4.3 10.881 2.707 9.293a1 1 0 0 0-1.414 1.414L2.882 12.3l-.585.587-.59-.589a1 1 0 1 0-1.414 1.41l.591.59-.29.291a1.974 1.974 0 0 0 0 2.819 1.975 1.975 0 0 0 2.82 0l7.727-7.718c.01-.01.02-.03.03-.04A4.881 4.881 0 0 0 13 10a5 5 0 0 0 0-10zm0 7a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/>
                                 </svg>
                              </div>
                              <div className="font-bold ml-4 mt-4 font-sans">Easy access</div>
