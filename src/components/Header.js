@@ -19,7 +19,7 @@ export default function Header() {
             
             <button type="button" className=" text-gray-400 hover:text-gray-400 sm:hidden">
               <svg
-                class="fill-current"
+                className="fill-current"
                 width="50px"
                 height="50px"
                 viewBox="0 0 50 50"

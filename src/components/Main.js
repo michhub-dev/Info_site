@@ -66,9 +66,9 @@ export default function Main(){
                  
                  <form className="w-full text-gray-200 max-w-xl mt-4 px-8 md:px-0 " action="#" method="post">
                      <div className="flex flex-col md:flex-row md:-mx-2">
-                         <label for="name" className="sr-only">Name</label>
+                         <label htmlFor="name" className="sr-only">Name</label>
                          <input id="name" type="text" placeholder="Enter your name" className="focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
-                          <label for="email" className="sr-only">Name</label>
+                          <label htmlFor="email" className="sr-only">Name</label>
                          <input id="email" type="email" placeholder="Enter your email" className=" focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
                           <textarea placeholder="Type your message" className="focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" />
                      </div>
