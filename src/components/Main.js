@@ -1,11 +1,14 @@
 import React from 'react';
+import Zoom from 'react-reveal/Zoom'; 
 
 export default function Main(){
     return (
         <>
          <main className="flex flex-col items-center mt-16 w-full">
+            <Zoom></Zoom>
              <div className="mx-4 max-w-4xl">
                  <h2 className="font-bold text-xl border-b pb-1 border-indigo-600 text-indigo-700 font-sans ">How it works?</h2>
+                 
                  <p className="text-sm mt-4 text-gray-600 shadow-lg p-4 rounded-lg">
                     Register and select a prefered course. If you are not sure of the course to enroll, do well to reach out 
                     via the message box below.
@@ -26,9 +29,11 @@ export default function Main(){
                                  </svg>
                              </div>
                              <div className="font-bold ml-4 font-sans mt-4 ">Self-pace</div>
+                             <Zoom duration={3000} delay={1000}>
                              <div className="mt-2 text-gray-600 shadow-lg p-4 rounded-lg text-center text-sm">
                                  Take the course at your prefered time and day. You can save to watch offline or stream
                              </div>
+                             </Zoom>
                          </div>
                      </div>
                         <div className="sm:w-1/3 mt-4">
@@ -39,10 +44,12 @@ export default function Main(){
                                 </svg>
                              </div>
                              <div className="font-bold ml-4 mt-4 font-sans">Easy access</div>
-                             <div className="mt-2 text-gray-600 shadow-lg p-4 rounded-lg text-center text-sm">
+                            <Zoom duration={3000} delay={1000}>
+                              <div className="mt-2 text-gray-600 shadow-lg p-4 rounded-lg text-center text-sm">
                                  You get access to all our free courses. 
                                  Switch between courses and work on amazing projects
-                             </div>
+                              </div>
+                            </Zoom>
                          </div>
                      </div>
                         <div className="sm:w-1/3 mt-4 ">
@@ -52,9 +59,11 @@ export default function Main(){
                                  </svg>
                              </div>
                              <div className="font-bold ml-4 mt-4 font-sans">Easy navigation</div>
+                             <Zoom duration={3000} delay={1000}>
                              <div className="mt-2 text-gray-600 shadow-lg text-center text-sm p-4 rounded-lg">
                                 Our platform is easy to navigate, checkout for the amazing career opportunities we got
                              </div>
+                             </Zoom>
                          </div>
                      </div>
                      
