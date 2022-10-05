@@ -1,18 +1,22 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom'; 
-
+import Fade from 'react-reveal/Fade'; 
+import Flip from 'react-reveal/Flip';
 export default function Main(){
     return (
         <>
          <main className="flex flex-col items-center mt-16 w-full">
             <Zoom></Zoom>
              <div className="mx-4 max-w-4xl">
+             <Fade top cascade duration={3000} delay={1000}>
                  <h2 className="font-bold text-xl border-b pb-1 border-indigo-600 text-indigo-700 font-sans ">How it works?</h2>
-                 
+                 </Fade>
+                 <Flip left duration={3000} delay={1000}>
                  <p className="text-sm mt-4 text-gray-600 shadow-lg p-4 rounded-lg">
                     Register and select a prefered course. If you are not sure of the course to enroll, do well to reach out 
                     via the message box below.
                  </p>
+                 </Flip>
                  <h2 className="text-xl mt-8 font-bold pt-1 font-sans text-indigo-700 border-b border-indigo-600 ">
                      Advantages 
                  </h2>
