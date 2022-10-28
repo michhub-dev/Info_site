@@ -1,4 +1,4 @@
-
+import React, { useState } from 'react';
 export default function Form() {
 
     const [formInfo, setFormInfo] = useState({
@@ -9,10 +9,34 @@ export default function Form() {
 
     const handleChange = (e) =>{
         const {name, value} = e.target 
-      
+        setFormInfo(prevFormInfo => {
+            return {
+                ...prevFormInfo,
+                [name]: value
+            }
+        })
     }
     const handleSubmit = (e) =>{
-        e.preventDefault
+        e.preventDefault() 
+        if(formInfo.userName ==="" || formInfo.email === " "){
+           
+            console.log("You need to fill out the inputs")
+            setFormInfo(prevFormInfo => {
+                return {
+                    ...prevFormInfo,
+                    [prevFormInfo.name]: " "
+                }
+            })
+        } else  if(formInfo.message === ""){
+            console.log("Please type your message")
+            setFormInfo(prevFormInfo => {
+                return {
+                    ...prevFormInfo,
+                    [prevFormInfo.email]: " "
+                }
+            })
+        }
+
 
     }
     return(
@@ -26,7 +50,7 @@ export default function Form() {
                  <form 
                    className="w-full text-gray-200 max-w-xl mt-4 px-8 md:px-0 "
                    onSubmit={handleSubmit}
-                   method="post">
+                   >
                      <div className="flex flex-col md:flex-row md:-mx-2">
                          <label 
                            htmlFor="name"
