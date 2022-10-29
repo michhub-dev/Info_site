@@ -18,9 +18,10 @@ export default function Main(){
                  </Fade>
 
                  <Flip left duration={3000} delay={1000}>
-                   <p className="text-sm mt-4 text-gray-600 shadow-lg p-4 rounded-lg">
+                   <p className="text-sm mt-4 text-gray-600 shadow-lg p-4 rounded-lg md:w-2/1 md:p-12">
                     Register and select a prefered course. If you are not sure of the course to enroll, do well to reach out 
                     via the message box below.
+                    Scholars will be assign to a mentor and team to collaborate with. The earlier you apply, the faster you get attended to 
                    </p>
                  </Flip>
 

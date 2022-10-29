@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import {useRef} from 'react';
+
 export default function Form() {
+ const [popupMessage, setPopupMessage] = useState("")
 
     const [formInfo, setFormInfo] = useState({
         userName: "",
@@ -20,15 +23,16 @@ export default function Form() {
         e.preventDefault() 
         if(formInfo.userName ==="" || formInfo.email === " "){
            
-            console.log("You need to fill out the inputs")
-            setFormInfo(prevFormInfo => {
+            setPopupMessage("You need to fill out the inputs")
+           
+           setFormInfo(prevFormInfo => {
                 return {
                     ...prevFormInfo,
                     [prevFormInfo.name]: " "
                 }
             })
         } else  if(formInfo.message === ""){
-            console.log("Please type your message")
+            setPopupMessage("Please type your message")
             setFormInfo(prevFormInfo => {
                 return {
                     ...prevFormInfo,
@@ -36,6 +40,7 @@ export default function Form() {
                 }
             })
         }
+        setPopupMessage("submitted")
 
 
     }
@@ -66,6 +71,7 @@ export default function Form() {
                            name='userName'
                            value={formInfo.userName}
                            onChange={handleChange}
+                          
                           />
                           <label 
                            htmlFor="email"
@@ -96,6 +102,7 @@ export default function Form() {
                           >
                         Send message
                         </button>
+                        <p className='text-lg text-bold text-white '>{popupMessage.toUpperCase()}</p>
                      </div>
                      
                  </form>
