@@ -21,29 +21,29 @@ export default function Form() {
     }
     const handleSubmit = (e) =>{
         e.preventDefault() 
-        if(formInfo.userName ==="" || formInfo.email === " "){
+       
+        // if(formInfo.userName.trim().length <2 && formInfo.email.trim().length === 0 && formInfo.message.trim().length ===0){
            
-            setPopupMessage("You need to fill out the inputs")
-           
-           setFormInfo(prevFormInfo => {
-                return {
-                    ...prevFormInfo,
-                    [prevFormInfo.name]: " "
-                }
-            })
-        } else  if(formInfo.message === ""){
-            setPopupMessage("Please type your message")
-            setFormInfo(prevFormInfo => {
-                return {
-                    ...prevFormInfo,
-                    [prevFormInfo.email]: " "
-                }
-            })
-        }
-        setPopupMessage("submitted")
-
-
+        //     setPopupMessage("You need to fill out the inputs")
+          
+          
+        //     return;
+        
+        // } else{
+           // setPopupMessage("submitted")
+        //     setFormInfo(prevFormInfo => {
+        //         return {
+        //             ...prevFormInfo,
+        //             [prevFormInfo.name]: " ",
+        //             [prevFormInfo.email]: " ",
+        //             [prevFormInfo.message]: " "
+        //         }
+        //     })
+        // }
+      
     }
+
+    
     return(
         <>
            <div className="bg-gray-800 py-12 w-full mt-12 flex flex-col items-center border-t-2 border-black">
@@ -71,6 +71,7 @@ export default function Form() {
                            name='userName'
                            value={formInfo.userName}
                            onChange={handleChange}
+                           required
                           
                           />
                           <label 
@@ -86,6 +87,7 @@ export default function Form() {
                           className=" focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" 
                           name="email"
                           value={formInfo.email}
+                          required
                           onChange={handleChange}
                           />
                           <textarea 
@@ -93,6 +95,7 @@ export default function Form() {
                             className="focus:outline-none mt-4 bg-gray-700 rounded-xl border border-gray-600 px-4 py-2 md:mx-2 w-full focus:bg-white focus:text-bold text-center text-black" 
                             name='message'
                             value={formInfo.message}
+                            required
                             onChange={handleChange}
                            />
                      </div>

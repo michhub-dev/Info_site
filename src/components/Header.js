@@ -2,7 +2,7 @@ import React from "react";
 import LightSpeed from 'react-reveal/LightSpeed';
 import Swing from 'react-reveal/Swing';
 import Reveal from 'react-reveal/Reveal';
-import "./styles.css";
+
 
 export default function Header() {
   return (
@@ -41,7 +41,7 @@ export default function Header() {
             delay={1000}
             >
               <h1 
-              className="text-indigo-100 font-sans text-bold text-2xl"
+              className="text-indigo-100 font-Lobster text-bold text-2xl"
               >
                 What are you interested in learning?
              </h1>
@@ -51,7 +51,7 @@ export default function Header() {
             delay={1000}
           > 
            <p 
-             className="text-gray-100 font-sans text-sm"
+             className="text-gray-100 font-Fasthand text-sm"
            >
             Choose from the long list of courses available on this platform
           </p>

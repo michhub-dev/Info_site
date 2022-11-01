@@ -1,14 +1,17 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Inter:wght@400;600;700&family=Nunito+Sans:wght@200;300;400;600&family=Open+Sans:wght@300&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .App {
   font-family: sans-serif;
   text-align: center;
 }
-h1{
-  font-family: 'Fasthand', cursive;
-font-family: 'Inter', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Open Sans', sans-serif;
+@layer base {
+  h1{
+    font-family: 'Lobster', cursive;
+   /* font-family: 'Inter', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;*/
+  }
+  
 }
